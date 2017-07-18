@@ -1,0 +1,15 @@
+#terminal {
+    width: 90%;
+    height: 90%;
+    min-height: 20em;
+    resize: none;
+    vertical-align: bottom;
+}
+
+#console {
+    width: 85%;
+}
+
+#submit {
+    width: 5%;
+}
