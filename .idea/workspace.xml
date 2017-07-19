@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07ad3aca-637a-4b5b-b789-d11faebca939" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/PracticalProject_JS_ThirdPart.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/commandPanel/consoleReader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cssFiles/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsCommands/appendEnd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsCommands/countElement.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsCommands/deleteAt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsCommands/insertAt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsCommands/prependStart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsCommands/reverseArray.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsCommands/rollLeft.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsCommands/rollRight.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsCommands/sortArray.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commandPanel/consoleReader.js" afterPath="$PROJECT_DIR$/commandPanel/consoleReader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jsCommands/appendEnd.js" afterPath="$PROJECT_DIR$/jsCommands/appendEnd.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,11 +18,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+            <state relative-caret-position="136">
+              <caret line="8" column="77" lean-forward="true" selection-start-line="8" selection-start-column="77" selection-end-line="8" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="consoleReader.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/commandPanel/consoleReader.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="34" column="54" lean-forward="true" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="appendEnd.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jsCommands/appendEnd.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -45,6 +52,15 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/jsCommands/appendEnd.js" />
+        <option value="$PROJECT_DIR$/commandPanel/consoleReader.js" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -59,7 +75,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="284" />
     <option name="y" value="28" />
     <option name="width" value="863" />
@@ -99,6 +115,11 @@
               <item name="PracticalProject_JS_ThirdPart" type="462c0819:PsiDirectoryNode" />
               <item name="cssFiles" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PracticalProject_JS_ThirdPart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PracticalProject_JS_ThirdPart" type="462c0819:PsiDirectoryNode" />
+              <item name="jsCommands" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -136,15 +157,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1500421930218</updated>
-      <workItem from="1500421931989" duration="153000" />
+      <workItem from="1500421931989" duration="806000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153000" />
+    <option name="totallyTimeSpent" value="806000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1532738" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -178,8 +199,24 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        <state relative-caret-position="136">
+          <caret line="8" column="77" lean-forward="true" selection-start-line="8" selection-start-column="77" selection-end-line="8" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsCommands/appendEnd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commandPanel/consoleReader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="34" column="54" lean-forward="true" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
           <folding />
         </state>
       </provider>

@@ -26,11 +26,14 @@
                 print("Reversed: ");
                 break;
             case "append":
-
+                let elementAppend = commandTokens[1];
+                appendEnd(theArray, elementAppend);
+                print("Append: ");
+                break;
                 break;
             case "prepend":
-                let element = commandTokens[1];
-                prependStart(theArray, element);
+                let elementPrepend = commandTokens[1];
+                prependStart(theArray, elementPrepend);
                 print("Prepend: ");
                 break;
             case "insert":
