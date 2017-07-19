@@ -1,5 +1,3 @@
-// let asd = require('../jsCommands/reverseArray');
-
 (function () {
     // alert('Enter the input list');
     let theArray = [];
@@ -9,11 +7,7 @@
     let input = document.getElementById('console');
     document.getElementById('submit').addEventListener('click', submit);
     input.addEventListener('keypress', (e) => e.code === 'Enter' ? submit() : '');
-
-    document.getElementById('refresh').addEventListener('click', function () {
-        input.disabled = false;
-        document.getElementById('submit').disabled = false;
-    });
+    document.getElementById('refresh').disabled = true;
 
     function submit() {
         let commandTokens = input.value.split(/\s+/)
@@ -91,6 +85,16 @@
                 } else {
                     invalidCommand();
                 }
+                document.getElementById('refresh').style.color = "blue";
+                document.getElementById('refresh').disabled = false;
+                document.getElementById('refresh').addEventListener('click', function () {
+                    input.disabled = false;
+                    document.getElementById('submit').disabled = false;
+                    terminal.value = '';
+                    initialized = false;
+                    document.getElementById('refresh').disabled = true;
+                    document.getElementById('refresh').style.color = "black";
+                });
                 break;
             default:
                 invalidCommand();
