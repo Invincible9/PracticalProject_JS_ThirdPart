@@ -1,3 +1,5 @@
+// let asd = require('../jsCommands/reverseArray');
+
 (function () {
     // alert('Enter the input list');
     let theArray = [];
@@ -27,16 +29,25 @@
                 break;
             case "append":
                 let elementAppend = commandTokens[1];
-                appendEnd(theArray, elementAppend);
-                print("Append: ");
+                if (elementAppend !== undefined) {
+                    appendEnd(theArray, elementAppend);
+                    print("Append: ");
+                } else {
+                    terminal.value += 'Cannot add empty element' + '\n';
+                }
                 break;
                 break;
             case "prepend":
                 let elementPrepend = commandTokens[1];
-                prependStart(theArray, elementPrepend);
-                print("Prepend: ");
+                if (elementPrepend !== undefined) {
+                    prependStart(theArray, elementPrepend);
+                    print("Prepend: ");
+                } else {
+                    terminal.value += 'Cannot add empty element' + '\n';
+                }
                 break;
             case "insert":
+
                 break;
             case "delete":
                 break;
@@ -49,11 +60,11 @@
             case "count":
                 break;
             case "end":
-                if(commandTokens.length === 1) {
+                if (commandTokens.length === 1) {
                     input.disabled = true;
                     document.getElementById('submit').disabled = true;
                     print("Finished: ");
-                }else{
+                } else {
                     invalidCOmmand();
                 }
                 break;
