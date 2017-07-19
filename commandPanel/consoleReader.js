@@ -10,10 +10,13 @@
     document.getElementById('refresh').disabled = true;
 
     function submit() {
-        let commandTokens = input.value.split(/\s+/)
-            .filter(e => e !== '');
+        let commandTokens = input.value.split(/\s+/).filter(e => e !== '');
 
-        if (!initialized) {
+        if (commandTokens.join(' ').trim() === ""){
+           return cannotAddEmptyElement();
+        }
+
+        if(!initialized) {
             theArray = commandTokens.slice(0);
             clearField();
             initialized = true;
@@ -47,21 +50,20 @@
                 break;
             case "insertAt":
                 let indexInsert = commandTokens[1];
-                let newString = commandTokens[2];
-                if(theArray === undefined || newString === undefined || typeof newString !== "string"){
-                    terminal.value += "Error: Invalid command" + '\n';
+                let newString = commandTokens.splice(2).filter(e => e !== '').join(" ");
+                if(theArray === undefined || newString === undefined || typeof newString !== "string" || newString.trim() === ""){
+                    invalidCommand();
                 }else if (indexInsert > theArray.length - 1 || indexInsert < 0){
                     terminal.value += `Error: Invalid index ${indexInsert}` + '\n';
                 }else {
                     insertAt(theArray, indexInsert, newString);
                     print("InsertAt: ");
                 }
-
                 break;
             case "deleteAt":
                 let indexDelete = Number(commandTokens[1]);
                 if(commandTokens[1] === undefined) {
-                    terminal.value += 'Error: Invalid command' + '\n';
+                    invalidCommand();
                 }else if (indexDelete > theArray.length - 1 || indexDelete < 0){
                     terminal.value += `Error: Invalid index ${indexDelete}` + '\n';
                 }else {
