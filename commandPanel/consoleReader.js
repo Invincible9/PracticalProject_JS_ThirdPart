@@ -23,11 +23,11 @@
         }
 
         switch (commandTokens[0]) {
-            case 'reverse':
+            case 'reverseArray':
                 reverseArray(theArray);
                 print("Reversed: ");
                 break;
-            case "append":
+            case "appendEnd":
                 let elementAppend = commandTokens[1];
                 if (elementAppend !== undefined) {
                     appendEnd(theArray, elementAppend);
@@ -37,7 +37,7 @@
                 }
                 break;
                 break;
-            case "prepend":
+            case "prependStart":
                 let elementPrepend = commandTokens[1];
                 if (elementPrepend !== undefined) {
                     prependStart(theArray, elementPrepend);
@@ -46,18 +46,18 @@
                     terminal.value += 'Cannot add empty element' + '\n';
                 }
                 break;
-            case "insert":
+            case "insertAt":
 
                 break;
-            case "delete":
+            case "deleteAt":
                 break;
-            case "roll left":
+            case "rollLeft":
                 break;
-            case "roll right":
+            case "rollRight":
                 break;
             case "sort":
                 break;
-            case "count":
+            case "countElement":
                 break;
             case "end":
                 if (commandTokens.length === 1) {
