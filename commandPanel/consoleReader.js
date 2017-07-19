@@ -33,7 +33,7 @@
                     appendEnd(theArray, elementAppend);
                     print("Append: ");
                 } else {
-                    terminal.value += 'Cannot add empty element' + '\n';
+                    cannotAddEmptyElement();
                 }
                 break;
                 break;
@@ -43,7 +43,7 @@
                     prependStart(theArray, elementPrepend);
                     print("Prepend: ");
                 } else {
-                    terminal.value += 'Cannot add empty element' + '\n';
+                    cannotAddEmptyElement();
                 }
                 break;
             case "insertAt":
@@ -65,11 +65,11 @@
                     document.getElementById('submit').disabled = true;
                     print("Finished: ");
                 } else {
-                    invalidCOmmand();
+                    invalidCommand();
                 }
                 break;
             default:
-                invalidCOmmand();
+                invalidCommand();
                 break;
         }
 
@@ -80,12 +80,16 @@
         return input.value = '';
     }
 
-    function invalidCOmmand() {
+    function invalidCommand() {
         terminal.value += 'Error: invalid command' + '\n';
     }
 
     function print(message) {
         terminal.value += message + theArray.join(' ') + '\n';
+    }
+
+    function cannotAddEmptyElement() {
+        terminal.value += 'Cannot add empty element' + '\n';
     }
 
 })();
