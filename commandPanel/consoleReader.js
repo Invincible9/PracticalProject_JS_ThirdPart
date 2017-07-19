@@ -49,24 +49,26 @@
             case "insertAt":
                 let indexInsert = commandTokens[1];
                 let newString = commandTokens[2];
-                if(theArray === "unidentified" || newString === "unidentified" || typeof newString !== "string"){
+                if(theArray === undefined || newString === undefined || typeof newString !== "string"){
                     terminal.value += "Error: Invalid command" + '\n';
-                }else if (indexInsert > input.length - 1 || indexInsert < 0){
+                }else if (indexInsert > theArray.length - 1 || indexInsert < 0){
                     terminal.value += `Error: Invalid index ${indexInsert}` + '\n';
+                }else {
+                    insertAt(theArray, indexInsert, newString);
+                    print("InsertAt: ");
                 }
 
-                insertAt(theArray, indexInsert, newString);
-                print("InsertAt: ");
                 break;
             case "deleteAt":
                 let indexDelete = Number(commandTokens[1]);
-                if(indexDelete === "undefined") {
+                if(commandTokens[1] === undefined) {
                     terminal.value += 'Error: Invalid command' + '\n';
                 }else if (indexDelete > theArray.length - 1 || indexDelete < 0){
                     terminal.value += `Error: Invalid index ${indexDelete}` + '\n';
+                }else {
+                    deleteAt(theArray, indexDelete);
+                    print("DeleteAt: ");
                 }
-                deleteAt(theArray, indexDelete);
-                print("DeleteAt: ");
                 break;
             case "rollLeft":
                 break;
