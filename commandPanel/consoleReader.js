@@ -1,7 +1,7 @@
 // let asd = require('../jsCommands/reverseArray');
 
 (function () {
-    // alert('Enter the input list');
+    alert('Enter the input list');
     let theArray = [];
     let initialized = false;
 
