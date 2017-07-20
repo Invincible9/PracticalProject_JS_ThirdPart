@@ -91,16 +91,7 @@
                 } else {
                     invalidCommand();
                 }
-                document.getElementById('refresh').style.color = "blue";
-                document.getElementById('refresh').disabled = false;
-                document.getElementById('refresh').addEventListener('click', function () {
-                    input.disabled = false;
-                    document.getElementById('submit').disabled = false;
-                    terminal.value = '';
-                    initialized = false;
-                    document.getElementById('refresh').disabled = true;
-                    document.getElementById('refresh').style.color = "black";
-                });
+                startAgain();
                 break;
             default:
                 invalidCommand();
@@ -124,6 +115,19 @@
 
     function cannotAddEmptyElement() {
         terminal.value += 'Cannot add empty element' + '\n';
+    }
+
+    function startAgain() {
+        document.getElementById('refresh').style.color = "blue";
+        document.getElementById('refresh').disabled = false;
+        document.getElementById('refresh').addEventListener('click', function () {
+            input.disabled = false;
+            document.getElementById('submit').disabled = false;
+            terminal.value = '';
+            initialized = false;
+            document.getElementById('refresh').disabled = true;
+            document.getElementById('refresh').style.color = "black";
+        });
     }
 
 })();
