@@ -5,6 +5,5 @@ function rollRight(array) {
 		result.push(array[i]);
 	}
 	array = result;
-	console.log(array);
 	return array;
 }
