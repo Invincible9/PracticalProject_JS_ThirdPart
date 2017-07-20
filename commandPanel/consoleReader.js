@@ -72,8 +72,12 @@
                 }
                 break;
             case "rollLeft":
+                theArray = rollLeft(theArray);
+                print("Rolled Left: ");
                 break;
             case "rollRight":
+                theArray = rollRight(theArray);
+                print("Rolled Right: ");
                 break;
             case "sort":
                 break;
