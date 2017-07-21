@@ -25,8 +25,8 @@
         }
 
         switch (commandTokens[0]) {
-            case 'reverseArray':
-                reverseArray(theArray);
+            case 'reverse':
+                reverse(theArray);
                 print("Reversed: ");
                 break;
             case "appendEnd":
@@ -39,10 +39,10 @@
                 }
                 break;
                 break;
-            case "prependStart":
+            case "prepend":
                 let elementPrepend = commandTokens[1];
                 if (elementPrepend !== undefined) {
-                    prependStart(theArray, elementPrepend);
+                    prepend(theArray, elementPrepend);
                     print("Prepend: ");
                 } else {
                     cannotAddEmptyElement();
