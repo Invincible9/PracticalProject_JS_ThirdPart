@@ -80,8 +80,16 @@
                 print("Rolled Right: ");
                 break;
             case "sort":
+                if(commandTokensValidate(commandTokens,2)){
+                    theArray = theArray.sort();
+                    print("Sorted: ");
+                }
                 break;
             case "countElement":
+                if(commandTokensValidate(commandTokens,3,1)){
+                    let count = countElement(theArray,commandTokens[1]);
+                    terminal.value+= `Count: ${count}\n`;
+                }
                 break;
             case "end":
                 if (commandTokens.length === 1) {
@@ -108,7 +116,14 @@
     function invalidCommand() {
         terminal.value += 'Error: invalid command' + '\n';
     }
-
+    function commandTokensValidate(commandTokens,lessThan,greaterThan){
+        console.log(commandTokens.length>=lessThan);
+        if(commandTokens.length>=lessThan || commandTokens.length<=greaterThan){
+            terminal.value += "Error: invalid command parameters\n";
+            return false;
+        }
+        return true;
+    }
     function print(message) {
         terminal.value += message + theArray.join(' ') + '\n';
     }
